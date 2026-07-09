@@ -5,4 +5,4 @@ COPY . .
 RUN bun install --no-save
 
 EXPOSE 3000
-CMD ["bun", "src/core/index.ts"]
+CMD ["bun", "src/cli.ts", "serve", "--http", "--port", "3000"]
